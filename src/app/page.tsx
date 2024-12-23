@@ -1,11 +1,19 @@
 import Image from "next/image";
-import {Button} from "@mui/material";
+import {Button, Typography} from "@mui/material";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Button>test button</Button>
+        <Typography>
+          Your search for a new position is your own, There's no need to share that data with the cloud. But keep it organized.
+        </Typography>
+        <Typography>
+          AppTrack was built with this mindset, It provides a simple user interface to track your journey finding new
+          employment, without letting the world know your searching. Nothing leaves your computer, and
+          anything/everything can be permanently deleted when/if you chose.
+          All while providing a simple way to access relevant data for your job search.
+        </Typography>
         <Image
           className="dark:invert"
           src="/next.svg"
