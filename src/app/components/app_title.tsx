@@ -1,6 +1,5 @@
 import Image from "next/image";
-import {Typography} from "@mui/material";
-import {Stack} from "@mui/system";
+import {Typography, Stack} from "@mui/material";
 
 export default function AppTitle() {
 
