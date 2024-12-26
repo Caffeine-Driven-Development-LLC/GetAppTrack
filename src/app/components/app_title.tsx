@@ -8,8 +8,8 @@ export default function AppTitle() {
             <Image
                 src="/AppTrackGhost.svg"
                 alt="AppTrack logo"
-                width={80}
-                height={38}
+                width={100}
+                height={150}
                 priority
             />
             <Typography variant="h1">
