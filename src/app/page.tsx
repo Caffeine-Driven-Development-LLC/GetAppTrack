@@ -1,7 +1,6 @@
 import {Typography, Box, Container} from "@mui/material";
 import AppTitle from "@/app/components/app_title";
 
-
 export default function Home() {
   return (
     <Box sx={{ p: 3}}>
