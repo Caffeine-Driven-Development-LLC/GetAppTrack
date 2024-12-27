@@ -1,20 +1,60 @@
 import Image from "next/image";
-import {Typography, Stack} from "@mui/material";
+import {Stack, Divider, Link, Button, Paper} from "@mui/material";
+import { useRouter } from 'next/navigation';
 
 export default function AppTitle() {
+  const router = useRouter();
 
-    return (
-        <Stack direction="row" spacing={2} alignItems="center">
-            <Image
-                src="/AppTrackGhost.svg"
-                alt="AppTrack logo"
-                width={100}
-                height={150}
-                priority
-            />
-            <Typography variant="h1" fontFamily="Roboto">
-                AppTrack
-            </Typography>
-        </Stack>
-    )
+  return (
+    <Paper sx={{padding: 3}}>
+    <Stack
+      direction="row"
+      justifyContent="space-between"
+      alignItems="center"
+      spacing={3}
+    >
+      <Link
+        component="button"
+        onClick={() => router.push('/')}
+      >
+        <Image
+          src="/Full Logo.svg"
+          alt="AppTrack logo"
+          width={400}
+          height={100}
+        />
+      </Link>
+      <Stack
+        direction="row-reverse"
+        divider={<Divider orientation="vertical" flexItem />}
+        spacing={2}
+      >
+        <Button
+          variant="contained"
+          fontFamily="Roboto"
+          color="success"
+          size="large"
+        >
+          Download
+        </Button>
+        <Link
+          component="button"
+          variant="h5"
+          fontFamily="Roboto"
+          onClick={() => router.push('/About')}
+        >
+          About
+        </Link>
+        <Link
+          component="button"
+          variant="h5"
+          fontFamily="Roboto"
+          onClick={() => router.push('https://www.google.com')}
+        >
+          GitHub
+        </Link>
+      </Stack>
+    </Stack>
+    </Paper>
+  )
 }

@@ -1,14 +1,12 @@
 import {Box, Stack, Typography} from "@mui/material";
-import AppTitle from "@/app/components/app_title";
 import Head from "next/head";
 
 export default function Index() {
   return (
-    <Box sx={{ p: 3}}>
+    <Box>
       <Head>
         <title>AppTrack</title>
       </Head>
-      <AppTitle />
       <Stack spacing={2}>
         <Typography fontFamily="Roboto">
           Your search for a new position is your own, There's no need to share that data with the cloud. But keep it organized.
