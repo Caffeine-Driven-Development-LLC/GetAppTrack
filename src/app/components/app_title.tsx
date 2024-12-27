@@ -31,9 +31,9 @@ export default function AppTitle() {
       >
         <Button
           variant="contained"
-          fontFamily="Roboto"
           color="success"
           size="large"
+          onClick={() => alert('Download')}
         >
           Download
         </Button>
