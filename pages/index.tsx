@@ -10,10 +10,10 @@ export default function Index() {
       </Head>
       <AppTitle />
       <Stack spacing={2}>
-        <Typography>
+        <Typography fontFamily="Roboto">
           Your search for a new position is your own, There's no need to share that data with the cloud. But keep it organized.
         </Typography>
-        <Typography>
+        <Typography fontFamily="Roboto">
           AppTrack was built with this mindset, It provides a simple user interface to track your journey finding new
           employment, without letting the world know your searching. Nothing leaves your computer, and
           anything/everything can be permanently deleted when/if you chose.

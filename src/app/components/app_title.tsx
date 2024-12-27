@@ -12,7 +12,7 @@ export default function AppTitle() {
                 height={150}
                 priority
             />
-            <Typography variant="h1">
+            <Typography variant="h1" fontFamily="Roboto">
                 AppTrack
             </Typography>
         </Stack>
