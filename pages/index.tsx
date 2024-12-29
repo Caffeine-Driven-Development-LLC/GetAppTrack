@@ -1,5 +1,6 @@
 import {Box, Stack, Typography} from "@mui/material";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Index() {
   return (
@@ -17,6 +18,12 @@ export default function Index() {
           anything/everything can be permanently deleted when/if you chose.
           All while providing a simple way to access relevant data for your job search.
         </Typography>
+        <Image
+          src="/appTrackScreenshots/applicationsPage.png"
+          alt="AppTrack applications page"
+          width={857}
+          height={573}
+        />
       </Stack>
     </Box>
   );
