@@ -8,7 +8,7 @@ export default function Index() {
       <Head>
         <title>AppTrack</title>
       </Head>
-      <Stack spacing={2} sx={{marginLeft: 10, marginRight: 10}}>
+      <Stack spacing={2}>
         <Typography fontFamily="Roboto" variant={'h5'} sx={{textAlign: 'center'}}>
           Your search for a new position is your own, keep it organized, don't share it.
         </Typography>
