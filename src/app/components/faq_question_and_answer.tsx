@@ -15,7 +15,7 @@ export default function FaqQuestionAndAnswer({question, children}: { question: s
           color="primary"
           aria-label="Less"
           onClick={() => setIsExpanded(!isExpanded)}
-          sx={{"height": "40px", "width": "40px"}}
+          sx={{"height": "30px", "width": "30px"}}
           size="large"
         >
           <ExpandLessIcon
@@ -29,7 +29,7 @@ export default function FaqQuestionAndAnswer({question, children}: { question: s
           color="primary"
           aria-label="More"
           onClick={() => setIsExpanded(!isExpanded)}
-          sx={{"height": "40px", "width": "40px"}}
+          sx={{"height": "30px", "width": "30px"}}
           size="large"
         >
           <ExpandMoreIcon
@@ -47,7 +47,7 @@ export default function FaqQuestionAndAnswer({question, children}: { question: s
         {chevronIcon()}
         <Stack spacing={2} direction="column">
           <Typography
-            variant="h4"
+            variant="h5"
           >
             {question}
           </Typography>

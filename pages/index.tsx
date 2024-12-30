@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <Box>
       <Head>
-        <title>AppTrack</title>
+        <title>App Track</title>
       </Head>
       <Stack spacing={2}>
         <Typography fontFamily="Roboto" variant={'h5'} sx={{textAlign: 'center'}}>
@@ -14,16 +14,16 @@ export default function Index() {
         </Typography>
         <Image
           src="/appTrackScreenshots/applicationsPage.png"
-          alt="AppTrack applications page"
+          alt="App Track applications page"
           width={857}
           height={573}
           style={{display: 'block', margin: '0 auto', marginTop: 20}}
         />
         <Typography fontFamily="Roboto">
-          AppTracker is free, open sourced, and private way to help you stay organized within your job search! We all
+          App Track is free, open sourced, and private way to help you stay organized within your job search! We all
           know how frustrating it can be to view countless listings, not realize whether you've already seen them,
           already applied, have already received a rejection, etc. By logging the opportunities you've applied for in
-          AppTracker, you can keep yourself organized, up-to-date, and agile within your job search.
+          App Track, you can keep yourself organized, up-to-date, and agile within your job search.
         </Typography>
       </Stack>
     </Box>

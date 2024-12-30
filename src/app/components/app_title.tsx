@@ -24,7 +24,7 @@ export default function AppTitle() {
         >
           <Image
             src="/Full Logo.svg"
-            alt="AppTrack logo"
+            alt="App Track logo"
             width={400}
             height={100}
           />

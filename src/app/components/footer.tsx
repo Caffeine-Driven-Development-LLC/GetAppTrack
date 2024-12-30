@@ -24,8 +24,8 @@ export default function Footer() {
           alignItems: "center",
           textAlign: "center"
         }}>
-          AppTrack is the result of continuous focus on self-improvement, both
-          professionally and personally. AppTrack was built in Chicago, Illinois. Do you know what else is located in
+          App Track is the result of continuous focus on self-improvement, both
+          professionally and personally. App Track was built in Chicago, Illinois. Do you know what else is located in
           Chicago, Illinois? Coffee shops. Want me to be able to visit one of those coffee shops? Please click here to
           buy me a coffee.
         </Typography>

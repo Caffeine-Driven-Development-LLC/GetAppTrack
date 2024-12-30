@@ -7,10 +7,20 @@ export default function FAQ() {
   return (
     <div>
       <Head>
-        <title>AppTrack - FAQ</title>
+        <title>App Track - FAQ</title>
       </Head>
       <Stack spacing={2}>
         <Typography variant="h2">Frequently Asked Questions</Typography>
+        <FaqQuestionAndAnswer question="Wait, it's free? Whats the catch?">
+          <Typography>
+            There is no catch, Your data is not shared with anyone, and there is no charge for the application. This
+            application was created as a side project and I cant in good conscience ask for payment or sell data from
+            this app to try and make a profit.
+          </Typography>
+          <Typography>
+            The code for this is open sourced so anyone can verify the privacy claims, or help contribute if they like.
+          </Typography>
+        </FaqQuestionAndAnswer>
         <FaqQuestionAndAnswer question="Can the application flow be customized?">
           <Typography>Yes! there is a system built so you can track your applicaion proccess any way you like.
             If you would like a slimmed down process, you can remove any steps you feel are unnecessary. Or
@@ -30,16 +40,6 @@ export default function FAQ() {
             bug reports or new features! Take a look at the contributing page to get started. {
             // TODO Update this one the github page is setup
           }
-          </Typography>
-        </FaqQuestionAndAnswer>
-        <FaqQuestionAndAnswer question="Wait its free, whats the catch?">
-          <Typography>
-            There is no catch, Your data is not shared with anyone, and there is no charge for the application. This
-            application was created as a side project and I cant in good conscience ask for payment or sell data from
-            this app to try and make a profit.
-          </Typography>
-          <Typography>
-            The code for this is open sourced so anyone can verify the privacy claims, or help contribute if they like.
           </Typography>
         </FaqQuestionAndAnswer>
       </Stack>
