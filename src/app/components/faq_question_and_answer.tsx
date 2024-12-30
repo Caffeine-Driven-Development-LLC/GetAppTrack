@@ -5,7 +5,7 @@ import {IconButton, Paper, Stack, Typography} from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
-export default function FaqQuestionAndAnswer({question, answer}) {
+export default function FaqQuestionAndAnswer({question, children}: { question: string, children: React.ReactNode }) {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const chevronIcon = () => {
@@ -51,13 +51,7 @@ export default function FaqQuestionAndAnswer({question, answer}) {
           >
             {question}
           </Typography>
-          {isExpanded &&
-              <Typography
-                  variant="h5"
-              >
-                {answer}
-              </Typography>
-          }
+          {isExpanded && children}
         </Stack>
       </Stack>
     </Paper>
