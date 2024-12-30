@@ -10,7 +10,8 @@ export default function Index() {
       </Head>
       <Stack spacing={2}>
         <Typography fontFamily="Roboto">
-          Your search for a new position is your own, There's no need to share that data with the cloud. But keep it organized.
+          Your search for a new position is your own, There's no need to share that data with the cloud. But keep it
+          organized.
         </Typography>
         <Typography fontFamily="Roboto">
           AppTrack was built with this mindset, It provides a simple user interface to track your journey finding new

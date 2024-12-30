@@ -1,6 +1,6 @@
 import Image from "next/image";
-import {Stack, Divider, Link, Button, Paper, Box} from "@mui/material";
-import { useRouter } from 'next/navigation';
+import {Box, Button, Divider, Link, Stack} from "@mui/material";
+import {useRouter} from 'next/navigation';
 
 export default function AppTitle() {
   const router = useRouter();
@@ -10,7 +10,7 @@ export default function AppTitle() {
       sx={{
         padding: 3,
         bgcolor: "primary.light"
-    }}
+      }}
     >
       <Stack
         direction="row"
@@ -31,7 +31,7 @@ export default function AppTitle() {
         </Link>
         <Stack
           direction="row-reverse"
-          divider={<Divider orientation="vertical" flexItem />}
+          divider={<Divider orientation="vertical" flexItem/>}
           spacing={2}
         >
           <Button
@@ -43,10 +43,10 @@ export default function AppTitle() {
             Download
           </Button>
           <Link
-              component="button"
-              variant="h5"
-              fontFamily="Roboto"
-              onClick={() => router.push('/FAQ')}
+            component="button"
+            variant="h5"
+            fontFamily="Roboto"
+            onClick={() => router.push('/FAQ')}
           >
             FAQ
           </Link>

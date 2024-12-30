@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import {Head, Html, Main, NextScript} from 'next/document'
 import {AppRouterCacheProvider} from "@mui/material-nextjs/v15-appRouter";
 
 export default function Document() {
@@ -8,10 +8,10 @@ export default function Document() {
         <link rel="icon" href="/icon.ico"/>
       </Head>
       <body>
-        <AppRouterCacheProvider>
-          <Main/>
-          <NextScript/>
-        </AppRouterCacheProvider>
+      <AppRouterCacheProvider>
+        <Main/>
+        <NextScript/>
+      </AppRouterCacheProvider>
       </body>
     </Html>
   )

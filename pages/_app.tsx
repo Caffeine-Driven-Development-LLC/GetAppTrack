@@ -1,6 +1,6 @@
-import type { ReactElement, ReactNode } from 'react'
-import type { NextPage } from 'next'
-import type { AppProps } from 'next/app'
+import type {ReactElement, ReactNode} from 'react'
+import type {NextPage} from 'next'
+import type {AppProps} from 'next/app'
 import theme from "@/app/theme";
 import {CssBaseline, Stack} from "@mui/material";
 import {ThemeProvider} from "@mui/material/styles";
@@ -14,11 +14,11 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout
 }
 
-export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+export default function MyApp({Component, pageProps}: AppPropsWithLayout) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline/>
-      <AppTitle />
+      <AppTitle/>
       <Stack spacing={3} sx={{padding: 3}}>
         <Component {...pageProps} />
       </Stack>
