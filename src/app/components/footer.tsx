@@ -1,6 +1,7 @@
 import {Box, Divider, Stack, Typography} from "@mui/material";
 
 export default function Footer() {
+  // TODO Add links to Github for code and email for the company
   return (
     <Box>
       <Stack spacing={2} sx={{
