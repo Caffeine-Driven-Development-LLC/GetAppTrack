@@ -8,23 +8,23 @@ export default function Index() {
       <Head>
         <title>AppTrack</title>
       </Head>
-      <Stack spacing={2}>
-        <Typography fontFamily="Roboto">
-          Your search for a new position is your own, There's no need to share that data with the cloud. But keep it
-          organized.
-        </Typography>
-        <Typography fontFamily="Roboto">
-          AppTrack was built with this mindset, It provides a simple user interface to track your journey finding new
-          employment, without letting the world know your searching. Nothing leaves your computer, and
-          anything/everything can be permanently deleted when/if you chose.
-          All while providing a simple way to access relevant data for your job search.
+      <Stack spacing={2} sx={{marginLeft: 10, marginRight: 10}}>
+        <Typography fontFamily="Roboto" variant={'h5'} sx={{textAlign: 'center'}}>
+          Your search for a new position is your own, keep it organized, don't share it.
         </Typography>
         <Image
           src="/appTrackScreenshots/applicationsPage.png"
           alt="AppTrack applications page"
           width={857}
           height={573}
+          style={{display: 'block', margin: '0 auto', marginTop: 20}}
         />
+        <Typography fontFamily="Roboto">
+          AppTracker is free, open sourced, and private way to help you stay organized within your job search! We all
+          know how frustrating it can be to view countless listings, not realize whether you've already seen them,
+          already applied, have already received a rejection, etc. By logging the opportunities you've applied for in
+          AppTracker, you can keep yourself organized, up-to-date, and agile within your job search.
+        </Typography>
       </Stack>
     </Box>
   );

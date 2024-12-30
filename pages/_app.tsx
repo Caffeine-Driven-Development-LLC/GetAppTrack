@@ -5,6 +5,7 @@ import theme from "@/app/theme";
 import {CssBaseline, Stack} from "@mui/material";
 import {ThemeProvider} from "@mui/material/styles";
 import AppTitle from "@/app/components/app_title";
+import Footer from "@/app/components/footer";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode
@@ -18,10 +19,13 @@ export default function MyApp({Component, pageProps}: AppPropsWithLayout) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline/>
-      <AppTitle/>
-      <Stack spacing={3} sx={{padding: 3}}>
-        <Component {...pageProps} />
-      </Stack>
+      <div style={{display: 'flex', flexDirection: 'column', minHeight: '100vh'}}>
+        <AppTitle/>
+        <Stack spacing={3} sx={{padding: 3, flex: 1}}>
+          <Component {...pageProps} />
+        </Stack>
+        <Footer/>
+      </div>
     </ThemeProvider>
   )
 }
