@@ -32,6 +32,17 @@ export default function Index() {
           already applied, have already received a rejection, etc. By logging the opportunities you've applied for in
           App Track, you can keep yourself organized, up-to-date, and agile within your job search.
         </Typography>
+        <Typography fontFamily="Roboto">
+          App Track will display your active applications so you can quickly see the state of your job search. It's
+          smart enough to sort applications that have progressed further to the top of the list, and will automatically
+          stop showing applications that have not had any progress after some time. All of this works right out of the
+          box and can be configured as you see fit.
+        </Typography>
+        <Typography fontFamily="Roboto">
+          Have confidence in the confidentiality of your data. App Track was built with privacy in mind. None of the
+          data leaves your computer and can be deleted at a moments notice. No account is required, or login is needed,
+          simply download the application and it is ready to use.
+        </Typography>
       </Stack>
     </Box>
   );
