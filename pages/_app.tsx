@@ -2,7 +2,7 @@ import type {ReactElement, ReactNode} from 'react'
 import type {NextPage} from 'next'
 import type {AppProps} from 'next/app'
 import theme from "@/app/theme";
-import {Box, CssBaseline, Stack} from "@mui/material";
+import {Container, CssBaseline, Stack} from "@mui/material";
 import {ThemeProvider} from "@mui/material/styles";
 import AppTitle from "@/app/components/app_title";
 import Footer from "@/app/components/footer";
@@ -19,13 +19,13 @@ export default function MyApp({Component, pageProps}: AppPropsWithLayout) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline/>
-      <Box sx={{display: 'flex', flexDirection: 'column', minHeight: '100vh'}}>
+      <Container disableGutters={true} maxWidth={'xl'}>
         <AppTitle/>
         <Stack spacing={3} sx={{padding: 3, flex: 1, marginLeft: 10, marginRight: 10}}>
           <Component {...pageProps} />
         </Stack>
         <Footer/>
-      </Box>
+      </Container>
     </ThemeProvider>
   )
 }

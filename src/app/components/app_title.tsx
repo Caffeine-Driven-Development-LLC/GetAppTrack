@@ -7,6 +7,7 @@ export default function AppTitle() {
 
   return (
     <Box
+      component="header"
       sx={{
         padding: 3,
         bgcolor: "primary.light"

@@ -3,7 +3,7 @@ import {Box, Divider, Stack, Typography} from "@mui/material";
 export default function Footer() {
   // TODO Add links to Github for code and email for the company
   return (
-    <Box>
+    <Box component="footer">
       <Stack spacing={2} sx={{
         padding: 3,
         bgcolor: "primary.light",
@@ -11,7 +11,7 @@ export default function Footer() {
         justifyContent: "center",
         alignItems: "center"
       }}>
-        <Stack direction="row"
+        <Stack direction={{xs: 'column', sm: 'row'}}
                divider={<Divider orientation="vertical" flexItem/>}
                spacing={2}
         >
