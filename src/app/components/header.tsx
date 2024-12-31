@@ -2,7 +2,7 @@ import Image from "next/image";
 import {Box, Button, Divider, Link, Stack} from "@mui/material";
 import {useRouter} from 'next/navigation';
 
-export default function AppTitle() {
+export default function Header() {
   const router = useRouter();
 
   return (

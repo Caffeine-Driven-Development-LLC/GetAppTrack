@@ -4,7 +4,7 @@ import type {AppProps} from 'next/app'
 import theme from "@/app/theme";
 import {Container, CssBaseline, Stack} from "@mui/material";
 import {ThemeProvider} from "@mui/material/styles";
-import AppTitle from "@/app/components/app_title";
+import Header from "@/app/components/header";
 import Footer from "@/app/components/footer";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
@@ -20,7 +20,7 @@ export default function MyApp({Component, pageProps}: AppPropsWithLayout) {
     <ThemeProvider theme={theme}>
       <CssBaseline/>
       <Container disableGutters={true} maxWidth={'xl'}>
-        <AppTitle/>
+        <Header/>
         <Stack spacing={3} sx={{padding: 3, flex: 1, marginLeft: 10, marginRight: 10}}>
           <Component {...pageProps} />
         </Stack>
