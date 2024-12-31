@@ -11,7 +11,17 @@ export default function Index() {
         <Typography fontFamily="Roboto" variant={'h5'} sx={{textAlign: 'center'}}>
           Your search for a new position is your own, keep it organized, don't share it.
         </Typography>
-        <video controls autoPlay muted style={{width: '776px', display: 'block', margin: '0 auto', padding: '20px'}}>
+        <video
+          controls autoPlay muted
+          style={{
+            width: '100%',
+            maxWidth: '776px',
+            display: 'block',
+            margin: '0 auto',
+            paddingTop: '20px',
+            paddingBottom: '20px'
+          }}
+        >
           <source src="/appTrackScreenshots/AppTrackDemo.mp4" type="video/mp4"/>
         </video>
         <Typography fontFamily="Roboto">

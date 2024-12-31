@@ -21,7 +21,7 @@ export default function MyApp({Component, pageProps}: AppPropsWithLayout) {
       <CssBaseline/>
       <Container disableGutters={true} maxWidth={'xl'}>
         <Header/>
-        <Stack spacing={3} sx={{padding: 3, flex: 1, marginLeft: 10, marginRight: 10}}>
+        <Stack spacing={3} sx={{padding: {xs: 3, sm: 5}}}>
           <Component {...pageProps} />
         </Stack>
         <Footer/>

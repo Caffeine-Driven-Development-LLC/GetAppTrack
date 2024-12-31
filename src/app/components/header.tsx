@@ -14,7 +14,7 @@ export default function Header() {
       }}
     >
       <Stack
-        direction="row"
+        direction={{xs: 'column', sm: 'row'}}
         justifyContent="space-between"
         alignItems="center"
         spacing={3}
@@ -28,6 +28,7 @@ export default function Header() {
             alt="App Track logo"
             width={400}
             height={100}
+            style={{maxWidth: 400, paddingLeft: 10, paddingRight: 10}}
           />
         </Link>
         <Stack
