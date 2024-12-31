@@ -12,7 +12,9 @@ export default function Index() {
           Your search for a new position is your own, keep it organized, don't share it.
         </Typography>
         <video
-          controls autoPlay muted
+          autoPlay
+          muted
+          playsInline
           style={{
             width: '100%',
             maxWidth: '776px',
