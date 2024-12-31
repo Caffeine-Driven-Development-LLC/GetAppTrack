@@ -32,7 +32,7 @@ export default function Header() {
           />
         </Link>
         <Stack
-          direction="row-reverse"
+          direction={{xs: 'column', sm: 'row-reverse'}}
           divider={<Divider orientation="vertical" flexItem/>}
           spacing={2}
         >
@@ -48,17 +48,17 @@ export default function Header() {
             component="button"
             variant="h5"
             fontFamily="Roboto"
-            onClick={() => router.push('/FAQ')}
+            onClick={() => router.push('/Documentation')}
           >
-            FAQ
+            Documentation
           </Link>
           <Link
             component="button"
             variant="h5"
             fontFamily="Roboto"
-            onClick={() => router.push('/About')}
+            onClick={() => router.push('/FAQ')}
           >
-            About
+            FAQ
           </Link>
         </Stack>
       </Stack>

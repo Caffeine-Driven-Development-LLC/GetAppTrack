@@ -1,11 +1,11 @@
 import Head from "next/head";
 import {Typography} from "@mui/material";
 
-export default function About() {
+export default function Documentation() {
   return (
     <div>
       <Head>
-        <title>App Track - About</title>
+        <title>App Track - Documentation</title>
       </Head>
       <Typography>
         App Track is a way to help you stay organized within your job search! We all know how frustrating it can be to
