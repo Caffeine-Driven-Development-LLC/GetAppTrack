@@ -1,6 +1,5 @@
 import {Box, Stack, Typography} from "@mui/material";
 import Head from "next/head";
-import Image from "next/image";
 
 export default function Index() {
   return (
@@ -12,13 +11,9 @@ export default function Index() {
         <Typography fontFamily="Roboto" variant={'h5'} sx={{textAlign: 'center'}}>
           Your search for a new position is your own, keep it organized, don't share it.
         </Typography>
-        <Image
-          src="/appTrackScreenshots/applicationsPage.png"
-          alt="App Track applications page"
-          width={857}
-          height={573}
-          style={{display: 'block', margin: '0 auto', marginTop: 20}}
-        />
+        <video controls autoPlay muted style={{width: '776px', display: 'block', margin: '0 auto', padding: '20px'}}>
+          <source src="/appTrackScreenshots/AppTrackDemo.mp4" type="video/mp4"/>
+        </video>
         <Typography fontFamily="Roboto">
           App Track is free, open sourced, and private way to help you stay organized within your job search! We all
           know how frustrating it can be to view countless listings, not realize whether you've already seen them,
