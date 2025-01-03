@@ -2,6 +2,7 @@ import Head from "next/head";
 import {List, ListItem, Stack, Typography} from "@mui/material";
 
 export default function Documentation() {
+  // TODO find a better way of orgnizing this data
   return (
     <div>
       <Head>
