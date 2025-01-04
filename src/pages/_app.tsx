@@ -1,11 +1,11 @@
 import type {ReactElement, ReactNode} from 'react'
 import type {NextPage} from 'next'
 import type {AppProps} from 'next/app'
-import theme from "@/app/theme";
+import theme from "../app/theme";
 import {Container, CssBaseline, Stack} from "@mui/material";
 import {ThemeProvider} from "@mui/material/styles";
-import Header from "@/app/components/header";
-import Footer from "@/app/components/footer";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 import Head from "next/head";
 
 export type NextPageWithLayout<P = object, IP = P> = NextPage<P, IP> & {

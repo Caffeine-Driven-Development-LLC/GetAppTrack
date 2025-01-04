@@ -1,6 +1,6 @@
 import Head from "next/head";
 import {Link, Stack, Typography} from "@mui/material";
-import FaqQuestionAndAnswer from "@/app/components/faq_question_and_answer";
+import FaqQuestionAndAnswer from "@/components/faq_question_and_answer";
 
 export default function FAQ() {
 

@@ -1,5 +1,5 @@
 import React from "react";
-import DocumentationLayout from "@/app/components/DocumentationLayout";
+import DocumentationLayout from "@/components/DocumentationLayout";
 import {Typography} from "@mui/material";
 
 export default function GettingStarted() {
