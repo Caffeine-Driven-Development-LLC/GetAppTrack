@@ -24,9 +24,17 @@ export default function MyApp({Component, pageProps}: AppPropsWithLayout) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline/>
-        <Container disableGutters={true} maxWidth={'xl'}>
+        <Container
+          disableGutters={true}
+          maxWidth={'xl'}
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            minHeight: '100vh',
+          }}
+        >
           <Header/>
-          <Stack spacing={3} sx={{padding: {xs: 3, sm: 5}}}>
+          <Stack spacing={3} sx={{padding: {xs: 3, sm: 5}}} component="main" flexGrow={1}>
             <Component {...pageProps} />
           </Stack>
           <Footer/>
