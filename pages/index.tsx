@@ -9,7 +9,7 @@ export default function Index() {
       </Head>
       <Stack spacing={2}>
         <Typography fontFamily="Roboto" variant={'h5'} sx={{textAlign: 'center'}}>
-          Your search for a new position is your own, keep it organized, don't share it.
+          Your search for a new position is your own, keep it organized, don&apos;t share it.
         </Typography>
         <video
           autoPlay
@@ -28,12 +28,13 @@ export default function Index() {
         </video>
         <Typography fontFamily="Roboto">
           App Track is free, open sourced, and private way to help you stay organized within your job search! We all
-          know how frustrating it can be to view countless listings, not realize whether you've already seen them,
-          already applied, have already received a rejection, etc. By logging the opportunities you've applied for in
+          know how frustrating it can be to view countless listings, not realize whether you&apos;ve already seen them,
+          already applied, have already received a rejection, etc. By logging the opportunities you&apos;ve applied for
+          in
           App Track, you can keep yourself organized, up-to-date, and agile within your job search.
         </Typography>
         <Typography fontFamily="Roboto">
-          App Track will display your active applications so you can quickly see the state of your job search. It's
+          App Track will display your active applications so you can quickly see the state of your job search. It&apos;s
           smart enough to sort applications that have progressed further to the top of the list, and will automatically
           stop showing applications that have not had any progress after some time. All of this works right out of the
           box and can be configured as you see fit.

@@ -1,77 +1,77 @@
 import React from 'react';
-import {Container, Link, List, ListItem, Stack, Typography} from "@mui/material";
+import {Container, Link, List, ListItem, Stack} from "@mui/material";
 import {useRouter} from "next/navigation";
 
 interface DocumentationLayoutProps {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
 
 const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({children}) => {
-    const router = useRouter();
+  const router = useRouter();
 
 
-    return (
+  return (
+    <Container>
+      <Stack direction={'row'} spacing={2}>
+        <List
+          sx={{width: '100%', maxWidth: 360, bgcolor: 'background.paper'}}
+          component="nav"
+          aria-labelledby="nested-list-subheader"
+        >
+          <ListItem>
+            <Link
+              component="button"
+              fontFamily="Roboto"
+              onClick={() => router.push('/Documentation/GettingStarted')}
+            >
+              Getting Started
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              component="button"
+              fontFamily="Roboto"
+              onClick={() => router.push('/Documentation/Settings')}
+            >
+              Settings
+            </Link>
+          </ListItem>
+          <List component="div" disablePadding>
+            <ListItem sx={{pl: 4}}>
+              <Link
+                component="button"
+                fontFamily="Roboto"
+                onClick={() => router.push('/Documentation/Settings/ApplicationEvents')}
+              >
+                Application Events
+              </Link>
+            </ListItem>
+            <ListItem sx={{pl: 4}}>
+              <Link
+                component="button"
+                fontFamily="Roboto"
+                onClick={() => router.push('/Documentation/Settings/SankeyDiagram')}
+              >
+                Sankey Diagrams
+              </Link>
+            </ListItem>
+            <ListItem sx={{pl: 4}}>
+              <Link
+                component="button"
+                fontFamily="Roboto"
+                onClick={() => router.push('/Documentation/Settings/DangerZone')}
+              >
+                Danger Zone
+              </Link>
+            </ListItem>
+          </List>
+        </List>
         <Container>
-            <Stack direction={'row'} spacing={2}>
-                <List
-                    sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
-                    component="nav"
-                    aria-labelledby="nested-list-subheader"
-                >
-                    <ListItem>
-                        <Link
-                            component="button"
-                            fontFamily="Roboto"
-                            onClick={() => router.push('/Documentation/GettingStarted')}
-                        >
-                            Getting Started
-                        </Link>
-                    </ListItem>
-                    <ListItem>
-                        <Link
-                            component="button"
-                            fontFamily="Roboto"
-                            onClick={() => router.push('/Documentation/Settings')}
-                        >
-                            Settings
-                        </Link>
-                    </ListItem>
-                    <List component="div" disablePadding>
-                        <ListItem sx={{ pl: 4 }}>
-                            <Link
-                                component="button"
-                                fontFamily="Roboto"
-                                onClick={() => router.push('/Documentation/Settings/ApplicationEvents')}
-                            >
-                                Application Events
-                            </Link>
-                        </ListItem>
-                        <ListItem sx={{ pl: 4 }}>
-                            <Link
-                                component="button"
-                                fontFamily="Roboto"
-                                onClick={() => router.push('/Documentation/Settings/SankeyDiagram')}
-                            >
-                                Sankey Diagrams
-                            </Link>
-                        </ListItem>
-                        <ListItem sx={{ pl: 4 }}>
-                            <Link
-                                component="button"
-                                fontFamily="Roboto"
-                                onClick={() => router.push('/Documentation/Settings/DangerZone')}
-                            >
-                                Danger Zone
-                            </Link>
-                        </ListItem>
-                    </List>
-                </List>
-                <Container>
-                    {children}
-                </Container>
-            </Stack>
+          {children}
         </Container>
-    )
+      </Stack>
+    </Container>
+  )
 }
 
 export default DocumentationLayout;
