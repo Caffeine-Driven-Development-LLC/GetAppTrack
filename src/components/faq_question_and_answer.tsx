@@ -1,7 +1,7 @@
 'use client';
 
 import React from "react";
-import {IconButton, Paper, Stack, Typography} from "@mui/material";
+import {Box, Collapse, IconButton, Paper, Stack, Typography} from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
@@ -45,14 +45,18 @@ export default function FaqQuestionAndAnswer({question, children}: { question: s
     <Paper sx={{"padding": 2}}>
       <Stack direction="row" spacing={2}>
         {chevronIcon()}
-        <Stack spacing={2} direction="column">
+        <Box>
           <Typography
             variant="h5"
           >
             {question}
           </Typography>
-          {isExpanded && children}
-        </Stack>
+          <Collapse in={isExpanded}>
+            <Box sx={{marginTop: 1}}>
+              {children}
+            </Box>
+          </Collapse>
+        </Box>
       </Stack>
     </Paper>
   )
