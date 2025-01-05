@@ -16,6 +16,8 @@ export default function DocumentationNavigationList() {
         {name: 'Danger Zone', href: '/documentation/settings/danger-zone'},
       ]
     },
+    {name: 'Applications', href: '/documentation/applications'},
+    {name: 'Companies', href: '/documentation/companies'},
   ]
 
   return (
