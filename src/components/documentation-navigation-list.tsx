@@ -7,6 +7,8 @@ export default function DocumentationNavigationList() {
 
   const pages = [
     {name: 'Getting Started', href: '/documentation/getting-started'},
+    {name: 'Applications', href: '/documentation/applications'},
+    {name: 'Companies', href: '/documentation/companies'},
     {
       name: 'Settings',
       href: '/documentation/settings',
@@ -16,8 +18,6 @@ export default function DocumentationNavigationList() {
         {name: 'Danger Zone', href: '/documentation/settings/danger-zone'},
       ]
     },
-    {name: 'Applications', href: '/documentation/applications'},
-    {name: 'Companies', href: '/documentation/companies'},
   ]
 
   return (
