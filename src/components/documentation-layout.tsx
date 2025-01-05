@@ -1,67 +1,48 @@
+'use client'
+
 import React from "react";
-import {useRouter} from "next/navigation";
-import {Container, Link, List, ListItem, Stack} from "@mui/material";
+import {Container, Drawer, Fab, Stack, Theme, useMediaQuery} from "@mui/material";
+import DocumentationNavigationList from "@/components/documentation-navigation-list";
+import MenuIcon from '@mui/icons-material/Menu';
 
 interface DocumentationLayoutProps {
   children: React.ReactNode;
 }
 
 const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({children}) => {
+  const [isOpen, setIsOpen] = React.useState(false);
 
-  const router = useRouter();
+  const isXsScreen = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
 
-  const pages = [
-    {name: 'Getting Started', href: '/documentation/getting-started'},
-    {
-      name: 'Settings',
-      href: '/documentation/settings',
-      children: [
-        {name: 'Application Events', href: '/documentation/settings/application-events'},
-        {name: 'Sankey Diagrams', href: '/documentation/settings/sankey-diagram'},
-        {name: 'Danger Zone', href: '/documentation/settings/danger-zone'},
-      ]
-    },
-  ]
+  const NavigationContent = isXsScreen ? (
+    <Drawer open={isOpen} onClose={() => setIsOpen(false)}>
+      <DocumentationNavigationList/>
+    </Drawer>
+  ) : (
+    <DocumentationNavigationList/>
+  );
+
+  const floatingActionButton = isXsScreen ? (
+    <Fab
+      aria-label="open drawer"
+      onClick={() => setIsOpen(true)}
+      sx={{
+        position: 'fixed',
+        bottom: 10,
+        right: 10,
+      }}
+    >
+      <MenuIcon/>
+    </Fab>
+  ) : (
+    <></>
+  );
 
   return (
     <Container>
       <Stack direction={'row'} spacing={2}>
-        <List
-          sx={{width: '100%', maxWidth: 360, bgcolor: 'background.paper'}}
-          component="nav"
-          aria-labelledby="nested-list-subheader"
-        >
-          {
-            pages.map((page) => (
-              <React.Fragment key={page.name}>
-                <ListItem>
-                  <Link
-                    component="button"
-                    fontFamily="Roboto"
-                    onClick={() => router.push(page.href)}
-                  >
-                    {page.name}
-                  </Link>
-                </ListItem>
-                {page.children && (
-                  <List component="div" disablePadding>
-                    {page.children.map((child) => (
-                      <ListItem key={child.name} sx={{pl: 4}}>
-                        <Link
-                          component="button"
-                          fontFamily="Roboto"
-                          onClick={() => router.push(child.href)}
-                        >
-                          {child.name}
-                        </Link>
-                      </ListItem>
-                    ))}
-                  </List>
-                )}
-              </React.Fragment>
-            ))
-          }
-        </List>
+        {NavigationContent}
+        {floatingActionButton}
         <Container>
           {children}
         </Container>
