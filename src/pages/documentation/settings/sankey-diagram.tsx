@@ -1,5 +1,5 @@
-import DocumentationLayout from "@/components/DocumentationLayout";
 import {Typography} from "@mui/material";
+import DocumentationLayout from "@/components/documentation-layout";
 
 export default function SankeyDiagram() {
   return (

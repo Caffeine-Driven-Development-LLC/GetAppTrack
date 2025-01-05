@@ -2,7 +2,7 @@ import Head from "next/head";
 import {Link, Stack, Typography} from "@mui/material";
 import FaqQuestionAndAnswer from "@/components/faq_question_and_answer";
 
-export default function FAQ() {
+export default function Faq() {
 
   return (
     <div>

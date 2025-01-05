@@ -1,14 +1,14 @@
-import React from 'react';
-import {Container, Link, List, ListItem, Stack} from "@mui/material";
+import React from "react";
 import {useRouter} from "next/navigation";
+import {Container, Link, List, ListItem, Stack} from "@mui/material";
 
 interface DocumentationLayoutProps {
   children: React.ReactNode;
 }
 
 const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({children}) => {
-  const router = useRouter();
 
+  const router = useRouter();
 
   return (
     <Container>
@@ -22,7 +22,7 @@ const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({children}) => 
             <Link
               component="button"
               fontFamily="Roboto"
-              onClick={() => router.push('/Documentation/GettingStarted')}
+              onClick={() => router.push('/documentation/getting-started')}
             >
               Getting Started
             </Link>
@@ -31,7 +31,7 @@ const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({children}) => 
             <Link
               component="button"
               fontFamily="Roboto"
-              onClick={() => router.push('/Documentation/Settings')}
+              onClick={() => router.push('/documentation/settings')}
             >
               Settings
             </Link>
@@ -41,7 +41,7 @@ const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({children}) => 
               <Link
                 component="button"
                 fontFamily="Roboto"
-                onClick={() => router.push('/Documentation/Settings/ApplicationEvents')}
+                onClick={() => router.push('/documentation/settings/application-events')}
               >
                 Application Events
               </Link>
@@ -50,7 +50,7 @@ const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({children}) => 
               <Link
                 component="button"
                 fontFamily="Roboto"
-                onClick={() => router.push('/Documentation/Settings/SankeyDiagram')}
+                onClick={() => router.push('/documentation/settings/sankey-diagram')}
               >
                 Sankey Diagrams
               </Link>
@@ -59,7 +59,7 @@ const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({children}) => 
               <Link
                 component="button"
                 fontFamily="Roboto"
-                onClick={() => router.push('/Documentation/Settings/DangerZone')}
+                onClick={() => router.push('/documentation/settings/danger-zone')}
               >
                 Danger Zone
               </Link>
@@ -73,5 +73,4 @@ const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({children}) => 
     </Container>
   )
 }
-
 export default DocumentationLayout;
