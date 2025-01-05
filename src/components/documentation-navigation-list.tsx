@@ -7,8 +7,20 @@ export default function DocumentationNavigationList() {
 
   const pages = [
     {name: 'Getting Started', href: '/documentation/getting-started'},
-    {name: 'Applications', href: '/documentation/applications'},
-    {name: 'Companies', href: '/documentation/companies'},
+    {
+      name: 'Applications',
+      href: '/documentation/applications',
+      children: [
+        {name: 'Add Application', href: '/documentation/applications/add-application'},
+      ]
+    },
+    {
+      name: 'Companies',
+      href: '/documentation/companies',
+      children: [
+        {name: 'Add Company', href: '/documentation/companies/add-company'},
+      ]
+    },
     {
       name: 'Settings',
       href: '/documentation/settings',
