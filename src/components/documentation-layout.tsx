@@ -10,6 +10,19 @@ const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({children}) => 
 
   const router = useRouter();
 
+  const pages = [
+    {name: 'Getting Started', href: '/documentation/getting-started'},
+    {
+      name: 'Settings',
+      href: '/documentation/settings',
+      children: [
+        {name: 'Application Events', href: '/documentation/settings/application-events'},
+        {name: 'Sankey Diagrams', href: '/documentation/settings/sankey-diagram'},
+        {name: 'Danger Zone', href: '/documentation/settings/danger-zone'},
+      ]
+    },
+  ]
+
   return (
     <Container>
       <Stack direction={'row'} spacing={2}>
@@ -18,53 +31,36 @@ const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({children}) => 
           component="nav"
           aria-labelledby="nested-list-subheader"
         >
-          <ListItem>
-            <Link
-              component="button"
-              fontFamily="Roboto"
-              onClick={() => router.push('/documentation/getting-started')}
-            >
-              Getting Started
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link
-              component="button"
-              fontFamily="Roboto"
-              onClick={() => router.push('/documentation/settings')}
-            >
-              Settings
-            </Link>
-          </ListItem>
-          <List component="div" disablePadding>
-            <ListItem sx={{pl: 4}}>
-              <Link
-                component="button"
-                fontFamily="Roboto"
-                onClick={() => router.push('/documentation/settings/application-events')}
-              >
-                Application Events
-              </Link>
-            </ListItem>
-            <ListItem sx={{pl: 4}}>
-              <Link
-                component="button"
-                fontFamily="Roboto"
-                onClick={() => router.push('/documentation/settings/sankey-diagram')}
-              >
-                Sankey Diagrams
-              </Link>
-            </ListItem>
-            <ListItem sx={{pl: 4}}>
-              <Link
-                component="button"
-                fontFamily="Roboto"
-                onClick={() => router.push('/documentation/settings/danger-zone')}
-              >
-                Danger Zone
-              </Link>
-            </ListItem>
-          </List>
+          {
+            pages.map((page) => (
+              <React.Fragment key={page.name}>
+                <ListItem>
+                  <Link
+                    component="button"
+                    fontFamily="Roboto"
+                    onClick={() => router.push(page.href)}
+                  >
+                    {page.name}
+                  </Link>
+                </ListItem>
+                {page.children && (
+                  <List component="div" disablePadding>
+                    {page.children.map((child) => (
+                      <ListItem key={child.name} sx={{pl: 4}}>
+                        <Link
+                          component="button"
+                          fontFamily="Roboto"
+                          onClick={() => router.push(child.href)}
+                        >
+                          {child.name}
+                        </Link>
+                      </ListItem>
+                    ))}
+                  </List>
+                )}
+              </React.Fragment>
+            ))
+          }
         </List>
         <Container>
           {children}
