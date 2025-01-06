@@ -27,7 +27,6 @@ export default function DocumentationNavigationList() {
       children: [
         {name: 'Application Events', href: '/documentation/settings/application-events'},
         {name: 'Sankey Diagrams', href: '/documentation/settings/sankey-diagram'},
-        {name: 'Danger Zone', href: '/documentation/settings/danger-zone'},
       ]
     },
   ]
