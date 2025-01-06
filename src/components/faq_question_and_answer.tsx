@@ -53,7 +53,9 @@ export default function FaqQuestionAndAnswer({question, children}: { question: s
           </Typography>
           <Collapse in={isExpanded}>
             <Box sx={{marginTop: 1}}>
-              {children}
+              <Stack spacing={2}>
+                {children}
+              </Stack>
             </Box>
           </Collapse>
         </Box>

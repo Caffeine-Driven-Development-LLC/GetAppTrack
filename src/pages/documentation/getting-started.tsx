@@ -15,19 +15,31 @@ export default function GettingStarted() {
           Lets go over some basic navigation. The application has 3 main pages accessible by the icons on the left side of the application.
         </Typography>
         <List>
-          <ListItem disablePadding>
+          <ListItem
+            disablePadding
+            component={Link}
+            href="/documentation/applications"
+          >
             <ListItemIcon>
               <ViewList color={"primary"}/>
             </ListItemIcon>
             <ListItemText primary="Applications"/>
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem
+            disablePadding
+            component={Link}
+            href="/documentation/companies"
+          >
             <ListItemIcon>
               <Business color={"primary"}/>
             </ListItemIcon>
             <ListItemText primary="Companies" />
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem
+            disablePadding
+            component={Link}
+            href="/documentation/settings"
+          >
             <ListItemIcon>
               <Settings color={"primary"}/>
             </ListItemIcon>
