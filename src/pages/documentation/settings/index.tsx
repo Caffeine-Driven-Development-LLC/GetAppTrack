@@ -32,7 +32,7 @@ export default function SettingsDocumentationPage() {
           Selecting the Configure Application Events button will allow you to change the events and order of events that an application can use. See the <Link href={"/documentation/settings/application-events"}>Configure Application Events</Link> section for more information around what configurations are possible for events.
         </Typography>
         <Typography>
-          Selecting the Configure Sankey Diagram button will allow you customize the graphs in the company details page. The <Link href={"/documentation/settings/sankey-diagram"}>Configure Sankey Diagram</Link> page has more documentation around what is possible with this graph.
+          Selecting the Configure Sankey Diagram button will allow you customize the graphs in the company details page. The <Link href={"/documentation/settings/sankey-diagram.tsx"}>Configure Sankey Diagram</Link> page has more documentation around what is possible with this graph.
         </Typography>
         <Typography variant="h4">
           Danger Zone
