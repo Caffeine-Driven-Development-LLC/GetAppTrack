@@ -1,5 +1,6 @@
-import {List, ListItem, Stack, Typography} from "@mui/material";
+import {Stack, Typography} from "@mui/material";
 import DocumentationLayout from "@/components/documentation-layout";
+import {ArrowDownward, ArrowUpward, Edit} from "@mui/icons-material";
 
 export default function ApplicationEvents() {
   return (
@@ -33,13 +34,13 @@ export default function ApplicationEvents() {
           Add New Event
         </Typography>
         <Typography>
-          Events can be added using the Add New Event button on the Configure Application Events page. This brings up a window where you can name your event, mark it as an Initial Step or Always Available, and add any possible next steps that can come after it. This window is the same if you select the pencil icon in the list of events if you wish to edit an existing event.
+          Events can be added using the Add New Event button on the Configure Application Events page. This brings up a window where you can name your event, mark it as an Initial Step or Always Available, and add any possible next steps that can come after it. This window is the same if you select the <Edit fontSize="small"/> in the list of events if you wish to edit an existing event.
         </Typography>
         <Typography variant={'h4'}>
           Changing the order of events
         </Typography>
         <Typography>
-          You can also order the events, This order is used to determine how far an application has progressed, and will effect the order that applications are displayed in the application list. It is best to order events so the further down in the list, the further down in the application process they are. Use the arrow keys on the left to change the order of an an Event.
+          You can also order the events, This order is used to determine how far an application has progressed, and will effect the order that applications are displayed in the application list. It is best to order events so the further down in the list, the further down in the application process they are. Use the arrow keys (<ArrowUpward fontSize="small"/>,  <ArrowDownward fontSize="small" />) on the left to change the order of an an Event.
         </Typography>
       </Stack>
     </DocumentationLayout>

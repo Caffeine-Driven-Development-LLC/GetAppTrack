@@ -25,7 +25,7 @@ export default function ExampleSankeyGraph() {
 
   const defaultColor = '#ffffff'
 
-  const getColor = (c) => {
+  const getColor = (c: string) => {
     return nodes?.find((n) => n.name === c)?.color || defaultColor
   }
 
