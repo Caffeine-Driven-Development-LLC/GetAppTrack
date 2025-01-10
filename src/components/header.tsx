@@ -47,7 +47,6 @@ export default function Header() {
           <Link
             component="button"
             variant="h5"
-            fontFamily="Roboto"
             onClick={() => router.push('/documentation/getting-started')}
           >
             Documentation
@@ -55,7 +54,6 @@ export default function Header() {
           <Link
             component="button"
             variant="h5"
-            fontFamily="Roboto"
             onClick={() => router.push('/faq')}
           >
             FAQ

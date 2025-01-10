@@ -19,10 +19,8 @@ const theme = createTheme({
     },
   },
   typography: {
-    allVariants: {
-      fontFamily: 'Roboto, Arial, sans-serif',
-      fontWeight: 400,
-    }
+    fontFamily: 'Roboto, Arial, sans-serif',
+    fontSize: 16,
   }
 })
 

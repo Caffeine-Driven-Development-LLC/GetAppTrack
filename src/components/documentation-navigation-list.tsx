@@ -43,7 +43,6 @@ export default function DocumentationNavigationList() {
             <ListItem>
               <Link
                 component="button"
-                fontFamily="Roboto"
                 onClick={() => router.push(page.href)}
               >
                 {page.name}
@@ -55,7 +54,6 @@ export default function DocumentationNavigationList() {
                   <ListItem key={child.name} sx={{pl: 4}}>
                     <Link
                       component="button"
-                      fontFamily="Roboto"
                       onClick={() => router.push(child.href)}
                     >
                       {child.name}
