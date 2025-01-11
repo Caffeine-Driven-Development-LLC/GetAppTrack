@@ -13,15 +13,20 @@ export default function Faq() {
         <Typography variant="h2">Frequently Asked Questions</Typography>
         <FaqQuestionAndAnswer question="Wait, it's free? Whats the catch?">
           <Typography>
-            There is no catch. Your data is not shared with anyone, and there is no charge for the application. This application was created as a side project and I can&#39;t in good conscience ask for payment or sell data from this app to try and make a profit.
+            There is no catch. Your data is not shared with anyone, and there is no charge for the application. This
+            application was created as a side project and I can&#39;t in good conscience ask for payment or sell data
+            from this app to try and make a profit.
           </Typography>
           <Typography>
-            The code for this is open-sourced so anyone can verify the privacy claims, or help contribute however they&#39;d like.
+            The code for this is open-sourced so anyone can verify the privacy claims, or help contribute however
+            they&#39;d like.
           </Typography>
         </FaqQuestionAndAnswer>
         <FaqQuestionAndAnswer question="Can the application flow be customized?">
           <Typography>
-            Yes! There is a system built so that you can track your application process any way you&#39;d like. If you would like a slimmed down process, you can remove any steps you feel are unnecessary. Or, go ahead an add any steps you feel are missing.
+            Yes! There is a system built so that you can track your application process any way you&#39;d like. If you
+            would like a slimmed down process, you can remove any steps you feel are unnecessary. Or, go ahead an add
+            any steps you feel are missing.
           </Typography>
         </FaqQuestionAndAnswer>
         <FaqQuestionAndAnswer question="Why are logos are not updating properly?">
