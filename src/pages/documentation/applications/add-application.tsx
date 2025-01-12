@@ -92,7 +92,7 @@ export default function AddApplicationDocumentationPage() {
           The Submit button at the bottom will save the application, and bring
           you back to the Applications page.
         </Typography>
-        <TableContainer>
+        <TableContainer component={Paper}>
           <Table sx={{ minWidth: 650 }} aria-label="Modal Fields">
             <TableHead>
               <TableRow>
