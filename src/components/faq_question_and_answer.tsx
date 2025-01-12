@@ -32,9 +32,9 @@ export default function FaqQuestionAndAnswer({question, children}: { question: s
           sx={{"height": "30px", "width": "30px"}}
           size="large"
         >
-          <ExpandMoreIcon
-            fontSize="inherit"
-          />
+                  <ExpandMoreIcon
+                    fontSize="inherit"
+                  />
         </IconButton>
       )
     }
