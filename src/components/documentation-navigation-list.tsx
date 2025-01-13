@@ -26,6 +26,10 @@ export default function DocumentationNavigationList() {
       href: '/documentation/companies',
       children: [
         { name: 'Add Company', href: '/documentation/companies/add-company' },
+        {
+          name: 'Company Details',
+          href: '/documentation/companies/company-details',
+        },
       ],
     },
     {
