@@ -1,19 +1,25 @@
-import React from "react";
-import {Link, List, ListItem, ListItemIcon, ListItemText, Stack, Typography} from "@mui/material";
-import DocumentationLayout from "@/components/documentation-layout";
-import {Business, Settings, ViewList} from "@mui/icons-material";
-
+import React from 'react';
+import {
+  Link,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Stack,
+  Typography,
+} from '@mui/material';
+import DocumentationLayout from '@/components/documentation-layout';
+import { Business, Settings, ViewList } from '@mui/icons-material';
 
 export default function GettingStarted() {
   return (
     <DocumentationLayout>
       <Stack spacing={2}>
-        <Typography variant="h2">
-          Getting Started
-        </Typography>
+        <Typography variant="h2">Getting Started</Typography>
+        <Typography>Let&#39;s go over some basic navigation!</Typography>
         <Typography>
-          Lets go over some basic navigation. The application has 3 main pages accessible by the icons on the left side
-          of the application.
+          An application has 3 main pages accessible, as indicated by the icons
+          on the left side.
         </Typography>
         <List>
           <ListItem
@@ -22,9 +28,9 @@ export default function GettingStarted() {
             href="/documentation/applications"
           >
             <ListItemIcon>
-              <ViewList color={"primary"}/>
+              <ViewList color={'primary'} />
             </ListItemIcon>
-            <ListItemText primary="Applications"/>
+            <ListItemText primary="Applications" />
           </ListItem>
           <ListItem
             disablePadding
@@ -32,9 +38,9 @@ export default function GettingStarted() {
             href="/documentation/companies"
           >
             <ListItemIcon>
-              <Business color={"primary"}/>
+              <Business color={'primary'} />
             </ListItemIcon>
-            <ListItemText primary="Companies"/>
+            <ListItemText primary="Companies" />
           </ListItem>
           <ListItem
             disablePadding
@@ -42,33 +48,52 @@ export default function GettingStarted() {
             href="/documentation/settings"
           >
             <ListItemIcon>
-              <Settings color={"primary"}/>
+              <Settings color={'primary'} />
             </ListItemIcon>
-            <ListItemText primary="Settings"/>
+            <ListItemText primary="Settings" />
           </ListItem>
         </List>
         <Typography>
-          Part of the way App Track helps organize your applications is by tracking who you have applied to, Each
-          application is for a specific company and you can create and and manage the companies in the companies tab.
-          Likewise, applications can be created or managed in the applications tab.
+          App Track helps organize your job search by organizing the list of
+          positions you have applied to. Each application is for a specific
+          company and you can create and and manage the companies in the
+          Companies tab. Likewise, applications can be created or managed in the
+          applications tab.
         </Typography>
         <Typography>
-          Applications will have a series of events that take place. Say you have an interview scheduled, or you pass a
-          phone screen. App Track will show you what applications are in what state with just a quick glance.
+          Every job application will have a series of events that take place as
+          the hiring process unfolds. For instance, passing a phone screen,
+          scheduling an interview, or receiving a verbal offer. App Track will
+          help keep you organized by classifying which stage each of your
+          applications are in at a quick glance.
         </Typography>
         <Typography>
-          When you first download App Track it comes with a default set of events that should fit most people&apos;s
-          needs, but it is recommend to view and make any changes you would like early on. This can be done in the
-          Settings, <Link href="/documentation/settings/application-events">Application Events</Link> page.
+          When you first download App Track, it comes &#34;turnkey ready&#34;
+          with a default set of events applicable to standard hiring processes.
+          That said, App Track can be configured at any point, and we encourage
+          you to make any changes that you would like to incorporate! This can
+          be done in the Settings {'>'}{' '}
+          <Link href="/documentation/settings/application-events">
+            Application Events
+          </Link>{' '}
+          page.
         </Typography>
         <Typography>
-          Once your Application events are setup. It&apos;s time to get to work! To create an application, you need to
-          first <Link href={"/documentation/companies/add-company"}>create the company</Link> if it does not already
-          exist. Then select the <Link href={"/documentation/applications/add-application"}>New
-          Application</Link> button on the Applications page and enter the details! From there the application will be
-          added to the list and can be managed from there.
+          Once your Application events are set up, its time to get organized! To
+          create an application, you will first need to{' '}
+          <Link href={'/documentation/companies/add-company'}>
+            add the company
+          </Link>{' '}
+          if it does not already exist. Once you have your Company ready, select
+          the{' '}
+          <Link href={'/documentation/applications/add-application'}>
+            New Application
+          </Link>{' '}
+          button on the Applications page, and enter your details. From there,
+          the application will be added to your list and can be managed
+          accordingly.
         </Typography>
       </Stack>
     </DocumentationLayout>
-  )
+  );
 }
