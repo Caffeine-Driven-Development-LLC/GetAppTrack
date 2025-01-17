@@ -7,38 +7,38 @@ export default function ApplicationsDocumentationIndex() {
       <Stack spacing={2}>
         <Typography variant="h2">Applications</Typography>
         <Typography>
-          The Application Page is the heart of the application, The default view
-          gives a list of all active applications sorted so that applications
-          that have progressed further hare at the top and easy to find.
+          The Application Page is the nerve center of the application. It
+          provides a list of all active application, sorted by application
+          progression. (Applications that have progressed beyond initial steps
+          will appear at the top of the list for ease of access.)
         </Typography>
         <Typography>
-          Each application is shown with its most relevant data. To the left
-          there is the position name, as well as the company name. To the right
-          is the most recent event that has happened to the application and how
-          long ago it happened. To the far right is a visual indicator of how
-          close the applications is to becoming ghosted. The longer the bar, the
-          longer the applicants has grown stale.
+          Every application is shown with its most relevant data: position name,
+          company name, most recent event, and a timestamp of the last update.
+          On the right hand side, you will see a visual indicator of how close
+          the application is to becoming &#34;ghosted&#34; - the longer the bar,
+          the longer the application has sat idle.
         </Typography>
         <Typography>
-          Selecting an application will take you to the{' '}
+          Selecting an application from the list will take you to the{' '}
           <Link href={'/documentation/applications/application-details'}>
             Application&#39;s Details
           </Link>{' '}
-          page where you can see more information about the application
-          including a timeline of events.
+          page, where you can view more information about it, including a
+          timeline of events.
         </Typography>
         <Typography>
-          You are able to search for any application by its name or company
-          using the search bar. This will display all applications, even ones
-          who are no longer active.
+          You are able to search for any application by name or by company using
+          the search bar. Please note this will display all applications, even
+          ones that are no longer active.
         </Typography>
         <Typography>
-          To add a new application, click the{' '}
+          To add a new opportunity, click the{' '}
           <Link href={'/documentation/applications/add-application'}>
             Add Application
           </Link>{' '}
-          button. This will take you to a form where you can fill out the
-          application&#39;s name and company.
+          button. This will take you to the form where you can provide more
+          information.
         </Typography>
       </Stack>
     </DocumentationLayout>
