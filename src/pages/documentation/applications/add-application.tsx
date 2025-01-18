@@ -19,8 +19,8 @@ export default function AddApplicationDocumentationPage() {
       name: 'Company',
       description: (
         <>
-          The Company is a required field, if it does not exist yet, it needs to
-          be created (The{' '}
+          Company is a required field. If the company does not yet exist im the
+          drop down menu, it will need to be added (the{' '}
           <Link href={'/documentation/companies/add-company'}>Add Company</Link>{' '}
           button on the <Link href={'/documentation/companies'}>Companies</Link>{' '}
           page).
@@ -30,6 +30,7 @@ export default function AddApplicationDocumentationPage() {
     },
     {
       name: 'Initial Event',
+      // TODO: Review description
       description: (
         <>
           If multiple{' '}
@@ -37,8 +38,8 @@ export default function AddApplicationDocumentationPage() {
             Application Events
           </Link>{' '}
           are marked as Initial Events, a dropdown will appear to select which
-          is appropriate. If only one Application Event is marked as Initial, no
-          dropdown will appear, and that event will be selected by default.
+          is appropriate. If only one event is marked as Initial, no dropdown
+          will appear, and that event will be selected by default.
         </>
       ),
       required: true,
@@ -46,34 +47,40 @@ export default function AddApplicationDocumentationPage() {
     {
       name: 'Date Applied',
       description: (
-        <>The date of this application. It defaults to the current date.</>
+        <>
+          The date of your entry. When entering events, it will default to the
+          current date.
+        </>
       ),
       required: true,
     },
     {
       name: 'Role',
-      description: <>The job title or role of the job</>,
+      description: <>The title of the position.</>,
       required: true,
     },
     {
       name: 'Salary',
       description: (
         <>
-          Split into two fields, for the advertised range of the role if it
-          exists
+          Two fields to allow you to enter the advertised range on the role
+          listing.
         </>
       ),
       required: false,
     },
     {
-      name: 'Link',
-      description: <>The URL to the job listing</>,
+      name: 'URL',
+      description: <>The link to the URL for the listing.</>,
       required: false,
     },
     {
       name: 'Notes',
       description: (
-        <>Any additional notes about the application you may wish to add</>
+        <>
+          Any additional notes or supporting information that you may wish to
+          add with your entry.
+        </>
       ),
       required: false,
     },
@@ -84,13 +91,13 @@ export default function AddApplicationDocumentationPage() {
       <Stack spacing={2}>
         <Typography variant="h2">Add a new Application</Typography>
         <Typography>
-          Adding a new application is done by selecting the New Application
-          button on the Applications page. This will bring up a modal to fill
-          out the basic information for the application.
+          To add a new opportunity to your list, go to the Applications page and
+          click the New Application button.
         </Typography>
         <Typography>
-          The Submit button at the bottom will save the application, and bring
-          you back to the Applications page.
+          A window will pop up to provide supporting information for your entry.
+          Once you&#39;ve entered the details, click the Submit button to return
+          to the main Applications page.
         </Typography>
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 650 }} aria-label="Modal Fields">
