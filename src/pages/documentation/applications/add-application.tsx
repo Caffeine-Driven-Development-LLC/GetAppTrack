@@ -30,17 +30,18 @@ export default function AddApplicationDocumentationPage() {
     },
     {
       name: 'Initial Event',
-      // TODO: Review description
       description: (
-        <>
-          If multiple{' '}
-          <Link href={'/documentation/settings/application-events'}>
-            Application Events
-          </Link>{' '}
-          are marked as Initial Events, a dropdown will appear to select which
-          is appropriate. If only one event is marked as Initial, no dropdown
-          will appear, and that event will be selected by default.
-        </>
+        <Stack spacing={2}>
+          <Typography>The event that started the application.</Typography>
+          <Typography>
+            <Link href={'/documentation/settings/application-events'}>
+              Application Events
+            </Link>{' '}
+            can be configured in the settings page, if multiple events are
+            marked as possible a possible initial event, a dropdown is displayed
+            for you to select from.
+          </Typography>
+        </Stack>
       ),
       required: true,
     },
