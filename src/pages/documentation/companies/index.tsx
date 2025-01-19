@@ -9,23 +9,28 @@ export default function CompaniesDocumentationIndex() {
           Companies
         </Typography>
         <Typography>
-          Companies are listed and managed from this page, basic information is displayed for each company including the
-          total applications sent and how long its been since the last application to the company.
+          Companies that you're applying to are managed from this page. Basic information is displayed for each company,
+          including the total number of applications sent and how long it has been since your last application to the
+          company.Companies that you're applying to are managed from this page. Basic information is displayed for each
+          company, including the total number of applications sent and how long it has been since your last application
+          to the company.Companies that you're applying to are managed from this page. Basic information is displayed
+          for each company, including the total number of applications sent and how long it has been since your last
+          application to the company.
         </Typography>
         <Typography>
-          Companies are sorted by alphabetical order, but the star in the upper right can be selected to favorite a
-          company to make sure it appears near the top of the list. Companies can also be searched for using the search
-          bar.
+          Companies are listed in alphabetical order by default. If you Favorite a company (using the star in the upper
+          right) applications to that company will appear at the top of the list. You can also search for Companies via
+          the search bar.
         </Typography>
         <Typography>
-          Selecting any company will take you to that <Link href={'/documentation/companies/company-details'}>companies
-          details</Link> page. where you can find
-          and edit all of the tracked information for a company, as well as a list of applications for the company.
+          Selecting any company will take you to the <Link href={'/documentation/companies/company-details'}>Company
+          Details</Link> page, where you can find and edit any supporting information that you've entered about an
+          organization.
         </Typography>
         <Typography>
-          The Add Company button will bring up a modal asking for more information about the company to be added. See
-          the <Link href={'/documentation/companies/add-company'}>Add Company</Link> page for more documentation on
-          this.
+          The Add Company button will bring up a window asking for more information about the company to be added. For
+          additional information, see the <Link href={'/documentation/companies/add-company'}>Add Company</Link> page
+          for more details.
         </Typography>
       </Stack>
     </DocumentationLayout>
