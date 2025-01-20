@@ -17,22 +17,38 @@ export default function AddCompanyDocumentationPage() {
   const fields = [
     {
       name: 'Name',
-      description: <>The name of the company.</>,
+      description: (
+        <>
+          The name of the organization.
+        </>
+      ),
       required: true,
     },
     {
       name: 'Home page',
-      description: <>The url of the company home page.</>,
+      description: (
+        <>
+          The URL of the company home page.
+        </>
+      ),
       required: false,
     },
     {
       name: 'Career page',
-      description: <>The url of the company career page.</>,
+      description: (
+        <>
+          The URL of the company career page.
+        </>
+      ),
       required: false,
     },
     {
       name: 'Notes',
-      description: <>Any notes about the company.</>,
+      description: (
+        <>
+          Any notes or supporting information that you wish to add.
+        </>
+      ),
       required: false,
     },
   ];
@@ -42,15 +58,12 @@ export default function AddCompanyDocumentationPage() {
       <Stack spacing={2}>
         <Typography variant="h2">Add a new company</Typography>
         <Typography>
-          Adding a new company is done by selecting the Add Company button on
-          the Companies page. This will bring up a modal to fill out the basic
-          information for the company.
+          You can add a new Company by clicking the Add Company button at the top of the Companies page. This will bring
+          up a window to provide basic information for the organization.
         </Typography>
         <Typography>
-          A logo can be added by selecting the <Edit fontSize="small" /> icon,
-          this will open a file chooser where you can select a .png, .jpeg .gif,
-          or .webp file. There is also a <Delete fontSize="small" /> icon to
-          remove the logo.
+          A logo can be added by selecting the <Edit fontSize="small" /> icon. This will open a file chooser where you
+          can select a .png, .jpeg .gif, or .webp file. There is also a <Delete fontSize="small" /> icon to remove the logo.
         </Typography>
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 650 }} aria-label="Modal Fields">
