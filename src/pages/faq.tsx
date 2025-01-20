@@ -30,12 +30,6 @@ export default function Faq() {
             ahead an add any steps you feel are missing.
           </Typography>
         </FaqQuestionAndAnswer>
-        <FaqQuestionAndAnswer question="Why are logos are not updating properly?">
-          <Typography>Try uploading a .png file.</Typography>
-          <Typography>
-            This is a known issue, and I am working on it.
-          </Typography>
-        </FaqQuestionAndAnswer>
         <FaqQuestionAndAnswer question="How can I contribute?">
           <Typography>
             The project is open-sourced on <Link href="">github</Link>. We would
