@@ -1,61 +1,89 @@
-import {Stack, Typography} from "@mui/material";
-import DocumentationLayout from "@/components/documentation-layout";
-import {ArrowDownward, ArrowUpward, Edit} from "@mui/icons-material";
+import { List, ListItem, Paper, Stack, Typography } from '@mui/material';
+import DocumentationLayout from '@/components/documentation-layout';
+import { ArrowDownward, ArrowUpward, Edit } from '@mui/icons-material';
 
 export default function ApplicationEvents() {
   return (
     <DocumentationLayout>
       <Stack spacing={2}>
-        <Typography variant="h2">
-          Application Events
+        <Typography variant="h2">Application Events</Typography>
+        <Typography>
+          Using App Track, applications follow a series of events known as
+          &#34;Application Events&#34;.
         </Typography>
         <Typography>
-          App Track applications follow a flow of steps called `Application Events` These are the states that an
-          application can be in at any given time, and what what events can come next.
+          An Application Event refers to the status that an application can be
+          in at any given time throughout the lifecycle of the application
+          process. Each event has a name, and can have a list of possible next
+          events.
+        </Typography>
+        <Paper sx={{ p: 2 }}>
+          <Typography variant="body2" component="div">
+            For example, Application Events could be the following:
+          </Typography>
+          <List>
+            <ListItem disablePadding>
+              <Typography variant="body2">- Applied</Typography>
+            </ListItem>
+            <ListItem disablePadding>
+              <Typography variant="body2">- Scheduled Phone Screen</Typography>
+            </ListItem>
+            <ListItem disablePadding>
+              <Typography variant="body2">- Completed Phone Screen</Typography>
+            </ListItem>
+            <ListItem disablePadding>
+              <Typography variant="body2">- Withdrawn</Typography>
+            </ListItem>
+          </List>
+        </Paper>
+        <Typography>
+          On the Settings page, you can choose to &#34;Configure Application
+          Events&#34; to align with your preferences.
         </Typography>
         <Typography>
-          On the Settings page there is button `Configure Application Events` that will bring up the Application Events
-          configuration page.
+          Events can be tagged as either an &#34;Initial Step&#34; or
+          &#34;Always Available&#34;.
+        </Typography>
+        <Typography variant={'h5'}>Initial Steps</Typography>
+        <Typography>
+          Initial Steps refer to events that are classified as &#34;initiating
+          the application process&#34;. A commonly used example of an Initial
+          Step could be &#34;Applied&#34; or &#34;Referred&#34;.
+        </Typography>
+        <Typography variant={'h5'}>Always Available</Typography>
+        <Typography>
+          Always Available Events are events that are classified as having the
+          possibility to occur at any time throughout the process. This could
+          include &#34;Withdrawing&#34; or &#34;Rejection&#34;.
+        </Typography>
+        <Typography variant={'h4'}>Add New Event</Typography>
+        <Typography>
+          Events can be added to the list using the &#34;Add New Event&#34;
+          button. Clicking this button will open a window where you can name
+          your desired event, mark it as an Initial Step (IS) or Always
+          Available (AA), and add any possible next steps that could occur after
+          it throughout the application process.
         </Typography>
         <Typography>
-          Events can be tagged as either an `Initial Step` or `Always Available`
+          Selecting the <Edit fontSize="small" /> icon for any event in the list
+          will bring up the same window, and enable you edit any details about
+          the event, or delete it entirely.
         </Typography>
-        <Typography variant={'h4'}>
-          Initial Steps
+        <Typography variant={'h4'}>Changing the Order of Events</Typography>
+        <Typography>
+          The sequential order of Application Events is entirely customizable.
+          The order of events is used to determine how far an application has
+          progressed throughout its lifecycle, and will impact the order in
+          which applications are displayed in your list.
         </Typography>
         <Typography>
-          An event that can start the application process, the easiest example is simply the Applied event to note you
-          have applied for a position, but this might not be comprehensive enough, a Referred event or even Head Hunted
-          event have been added in the default configurations.
-        </Typography>
-        <Typography variant={'h4'}>
-          Always Available
-        </Typography>
-        <Typography>
-          These events are always available when picking the next step of an application, at any time you can chose to
-          withdraw your application, or you may receive a rejection, but you can add or remove more events as you see
-          fit.
-        </Typography>
-        <Typography variant={'h4'}>
-          Add New Event
-        </Typography>
-        <Typography>
-          Events can be added using the Add New Event button on the Configure Application Events page. This brings up a
-          window where you can name your event, mark it as an Initial Step or Always Available, and add any possible
-          next steps that can come after it. This window is the same if you select the <Edit fontSize="small"/> in the
-          list of events if you wish to edit an existing event.
-        </Typography>
-        <Typography variant={'h4'}>
-          Changing the order of events
-        </Typography>
-        <Typography>
-          You can also order the events, This order is used to determine how far an application has progressed, and will
-          effect the order that applications are displayed in the application list. It is best to order events so the
-          further down in the list, the further down in the application process they are. Use the arrow keys
-          (<ArrowUpward fontSize="small"/>, <ArrowDownward fontSize="small"/>) on the left to change the order of an an
-          Event.
+          It is best to order the events as such that the lower down on the
+          list, the further along in the application process they are. Use the
+          arrow keys (
+          <ArrowUpward fontSize="small" />, <ArrowDownward fontSize="small" />)
+          on the left to change the order of an Event.
         </Typography>
       </Stack>
     </DocumentationLayout>
-  )
+  );
 }
