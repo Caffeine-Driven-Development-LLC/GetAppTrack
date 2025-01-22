@@ -47,7 +47,7 @@ export default function SettingsDocumentationPage() {
           events) that are available to choose from.
         </Typography>
         <Typography>
-          <Link href={'/documentation/settings/sankey-diagram.tsx'}>
+          <Link href={'/documentation/settings/sankey-diagram'}>
             Configure Sankey Diagram
           </Link>{' '}
           will allow you to view a customizable visual representation of the

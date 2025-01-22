@@ -34,7 +34,7 @@ export default function AddApplicationDocumentationPage() {
         <Stack spacing={2}>
           <Typography>The event that started the application.</Typography>
           <Typography>
-            <Link href={'/documentation/settings/application-events'}>
+            <Link href={'/documentation/settings/application-events.tsx'}>
               Application Events
             </Link>{' '}
             can be configured in the settings page, if multiple events are
