@@ -1,4 +1,4 @@
-import { Box, Divider, Stack, Typography } from '@mui/material';
+import { Box, Divider, Link, Stack, Typography } from '@mui/material';
 
 export default function Footer() {
   // TODO Add links to Github for code and email for the company
@@ -24,7 +24,7 @@ export default function Footer() {
           spacing={2}
         >
           <Typography>Github</Typography>
-          <Typography>Support@getAppTrack.com</Typography>
+          <Link href="mailto:Support@getAppTrack.com">Contact us</Link>
         </Stack>
         <Typography
           variant="body2"
