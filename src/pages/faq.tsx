@@ -53,7 +53,10 @@ export default function Faq() {
             Because of this, there is no way to identify what is working well,
             or what needs improvement in the application. If you have any
             feedback about the application, positive or negative, please let us
-            know by emailing //TODO add email
+            know by emailing us at{' '}
+            <Link href="mailto:Support@GetAppTrack.com">
+              Support@GetAppTrack.com
+            </Link>
           </Typography>
         </FaqQuestionAndAnswer>
       </Stack>

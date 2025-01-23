@@ -1,7 +1,6 @@
 import { Box, Divider, Link, Stack, Typography } from '@mui/material';
 
 export default function Footer() {
-  // TODO Add links to Github for code and email for the company
   return (
     <Box
       component="footer"
