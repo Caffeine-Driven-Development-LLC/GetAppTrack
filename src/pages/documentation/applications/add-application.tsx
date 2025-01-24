@@ -12,6 +12,8 @@ import {
 } from '@mui/material';
 import DocumentationLayout from '@/components/documentation-layout';
 import CheckIcon from '@mui/icons-material/Check';
+import Head from 'next/head';
+import React from 'react';
 
 export default function AddApplicationDocumentationPage() {
   const fields = [
@@ -89,6 +91,9 @@ export default function AddApplicationDocumentationPage() {
 
   return (
     <DocumentationLayout>
+      <Head>
+        <title>App Track - Add Application</title>
+      </Head>
       <Stack spacing={2}>
         <Typography variant="h2">Add a new Application</Typography>
         <Typography>

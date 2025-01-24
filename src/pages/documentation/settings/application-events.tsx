@@ -1,10 +1,15 @@
 import { List, ListItem, Paper, Stack, Typography } from '@mui/material';
 import DocumentationLayout from '@/components/documentation-layout';
 import { ArrowDownward, ArrowUpward, Edit } from '@mui/icons-material';
+import Head from 'next/head';
+import React from 'react';
 
 export default function ApplicationEvents() {
   return (
     <DocumentationLayout>
+      <Head>
+        <title>App Track - Application Events</title>
+      </Head>
       <Stack spacing={2}>
         <Typography variant="h2">Application Events</Typography>
         <Typography>

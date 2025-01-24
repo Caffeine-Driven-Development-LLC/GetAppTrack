@@ -12,42 +12,30 @@ import {
 import DocumentationLayout from '@/components/documentation-layout';
 import { Delete, Edit } from '@mui/icons-material';
 import CheckIcon from '@mui/icons-material/Check';
+import Head from 'next/head';
+import React from 'react';
 
 export default function AddCompanyDocumentationPage() {
   const fields = [
     {
       name: 'Name',
-      description: (
-        <>
-          The name of the organization.
-        </>
-      ),
+      description: <>The name of the organization.</>,
       required: true,
     },
     {
       name: 'Home page',
-      description: (
-        <>
-          The URL of the company home page.
-        </>
-      ),
+      description: <>The URL of the company home page.</>,
       required: false,
     },
     {
       name: 'Career page',
-      description: (
-        <>
-          The URL of the company career page.
-        </>
-      ),
+      description: <>The URL of the company career page.</>,
       required: false,
     },
     {
       name: 'Notes',
       description: (
-        <>
-          Any notes or supporting information that you wish to add.
-        </>
+        <>Any notes or supporting information that you wish to add.</>
       ),
       required: false,
     },
@@ -55,15 +43,21 @@ export default function AddCompanyDocumentationPage() {
 
   return (
     <DocumentationLayout>
+      <Head>
+        <title>App Track - Add Company</title>
+      </Head>
       <Stack spacing={2}>
         <Typography variant="h2">Add a new company</Typography>
         <Typography>
-          You can add a new Company by clicking the Add Company button at the top of the Companies page. This will bring
-          up a window to provide basic information for the organization.
+          You can add a new Company by clicking the Add Company button at the
+          top of the Companies page. This will bring up a window to provide
+          basic information for the organization.
         </Typography>
         <Typography>
-          A logo can be added by selecting the <Edit fontSize="small" /> icon. This will open a file chooser where you
-          can select a .png, .jpeg .gif, or .webp file. There is also a <Delete fontSize="small" /> icon to remove the logo.
+          A logo can be added by selecting the <Edit fontSize="small" /> icon.
+          This will open a file chooser where you can select a .png, .jpeg .gif,
+          or .webp file. There is also a <Delete fontSize="small" /> icon to
+          remove the logo.
         </Typography>
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 650 }} aria-label="Modal Fields">

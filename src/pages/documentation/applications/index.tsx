@@ -1,9 +1,14 @@
 import DocumentationLayout from '@/components/documentation-layout';
 import { Link, Stack, Typography } from '@mui/material';
+import Head from 'next/head';
+import React from 'react';
 
 export default function ApplicationsDocumentationIndex() {
   return (
     <DocumentationLayout>
+      <Head>
+        <title>App Track - Application</title>
+      </Head>
       <Stack spacing={2}>
         <Typography variant="h2">Applications</Typography>
         <Typography>

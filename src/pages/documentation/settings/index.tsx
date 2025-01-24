@@ -2,10 +2,14 @@ import { Link, Stack, Typography } from '@mui/material';
 import { Settings } from '@mui/icons-material';
 import DocumentationLayout from '@/components/documentation-layout';
 import React from 'react';
+import Head from 'next/head';
 
 export default function SettingsDocumentationPage() {
   return (
     <DocumentationLayout>
+      <Head>
+        <title>App Track - Settings</title>
+      </Head>
       <Stack spacing={2}>
         <Typography variant="h2">Settings</Typography>
         <Typography>

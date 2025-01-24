@@ -2,10 +2,15 @@ import { Link, Paper, Stack, Typography } from '@mui/material';
 import DocumentationLayout from '@/components/documentation-layout';
 import ExampleSankeyGraph from '@/components/example-sankey-graph';
 import { Edit } from '@mui/icons-material';
+import Head from 'next/head';
+import React from 'react';
 
 export default function SankeyDiagramDocumentationPage() {
   return (
     <DocumentationLayout>
+      <Head>
+        <title>App Track - Sankey Diagrams</title>
+      </Head>
       <Stack spacing={2}>
         <Typography variant="h2">Sankey Diagrams</Typography>
         <Paper sx={{ padding: 2 }} elevation={0}>

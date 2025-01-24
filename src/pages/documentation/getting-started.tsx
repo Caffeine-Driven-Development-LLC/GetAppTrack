@@ -10,10 +10,14 @@ import {
 } from '@mui/material';
 import DocumentationLayout from '@/components/documentation-layout';
 import { Business, Settings, ViewList } from '@mui/icons-material';
+import Head from 'next/head';
 
 export default function GettingStarted() {
   return (
     <DocumentationLayout>
+      <Head>
+        <title>App Track - Getting Started</title>
+      </Head>
       <Stack spacing={2}>
         <Typography variant="h2">Getting Started</Typography>
         <Typography>Let&#39;s go over some basic navigation!</Typography>

@@ -1,25 +1,36 @@
-'use client'
+'use client';
 
-import React from "react";
-import {Container, Drawer, Fab, Stack, Theme, useMediaQuery} from "@mui/material";
-import DocumentationNavigationList from "@/components/documentation-navigation-list";
+import React from 'react';
+import {
+  Container,
+  Drawer,
+  Fab,
+  Stack,
+  Theme,
+  useMediaQuery,
+} from '@mui/material';
+import DocumentationNavigationList from '@/components/documentation-navigation-list';
 import MenuIcon from '@mui/icons-material/Menu';
 
 interface DocumentationLayoutProps {
   children: React.ReactNode;
 }
 
-const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({children}) => {
+const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({
+  children,
+}) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const isXsScreen = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
+  const isXsScreen = useMediaQuery((theme: Theme) =>
+    theme.breakpoints.down('sm')
+  );
 
   const NavigationContent = isXsScreen ? (
     <Drawer open={isOpen} onClose={() => setIsOpen(false)}>
-      <DocumentationNavigationList/>
+      <DocumentationNavigationList />
     </Drawer>
   ) : (
-    <DocumentationNavigationList/>
+    <DocumentationNavigationList />
   );
 
   const floatingActionButton = isXsScreen ? (
@@ -32,7 +43,7 @@ const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({children}) => 
         right: 10,
       }}
     >
-      <MenuIcon/>
+      <MenuIcon />
     </Fab>
   ) : (
     <></>
@@ -43,11 +54,10 @@ const DocumentationLayout: React.FC<DocumentationLayoutProps> = ({children}) => 
       <Stack direction={'row'} spacing={2}>
         {NavigationContent}
         {floatingActionButton}
-        <Container>
-          {children}
-        </Container>
+        <Container>{children}</Container>
       </Stack>
     </Container>
-  )
-}
+  );
+};
+
 export default DocumentationLayout;

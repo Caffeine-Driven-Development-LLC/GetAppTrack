@@ -1,9 +1,14 @@
 import DocumentationLayout from '@/components/documentation-layout';
 import { Stack, Typography } from '@mui/material';
+import Head from 'next/head';
+import React from 'react';
 
 export default function ApplicationDetails() {
   return (
     <DocumentationLayout>
+      <Head>
+        <title>App Track - Application Details</title>
+      </Head>
       <Stack spacing={2}>
         <Typography variant="h2">Application Details</Typography>
         <Typography>
