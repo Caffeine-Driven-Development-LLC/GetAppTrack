@@ -10,6 +10,13 @@ export default function Faq() {
       </Head>
       <Stack spacing={2}>
         <Typography variant="h2">Frequently Asked Questions</Typography>
+        <FaqQuestionAndAnswer question="When will App Track be available for download?">
+          <Typography>
+            Soon! There is a small list of items to do yet so the app can be
+            distributed, but work is progressing, and version 1 should be out
+            soon.
+          </Typography>
+        </FaqQuestionAndAnswer>
         <FaqQuestionAndAnswer question="Wait, it's free? Whats the catch?">
           <Typography>
             There is no catch. Your data is not shared with anyone, and there is
@@ -32,10 +39,13 @@ export default function Faq() {
         </FaqQuestionAndAnswer>
         <FaqQuestionAndAnswer question="How can I contribute?">
           <Typography>
-            The project is open-sourced on <Link href="">github</Link>. We would
-            love for you to come help with either bug reports or new features!
-            Take a look at the <Link href="">Contributing</Link> page to get
-            started.{' '}
+            The project is open-sourced on{' '}
+            <Link href="https://github.com/Caffeine-Driven-Development-LLC/AppTrack">
+              github
+            </Link>
+            . We would love for you to come help with either bug reports or new
+            features! Take a look at the <Link href="">Contributing</Link> page
+            to get started.{' '}
             {
               // TODO Update this one the github page is setup
             }

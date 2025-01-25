@@ -22,7 +22,7 @@ export default function Footer() {
           divider={<Divider orientation="vertical" flexItem />}
           spacing={2}
         >
-          <Link href="https://github.com/Caffeine-Driven-Development-LLC/getAppTrack">
+          <Link href="https://github.com/Caffeine-Driven-Development-LLC">
             Github
           </Link>
           <Link href="mailto:Support@getAppTrack.com">Contact us</Link>
@@ -37,8 +37,10 @@ export default function Footer() {
           }}
         >
           App Track is the result of an exercise in self improvement, both
-          professionally and personally. App Track was built in Chicago, and
-          distributed under Caffeine Driven Development LLC.
+          professionally and personally.
+        </Typography>
+        <Typography variant="body2" sx={{ textAlign: 'center' }}>
+          &copy; 2025 Caffeine Driven Development LLC.
         </Typography>
       </Stack>
     </Box>
