@@ -22,7 +22,7 @@ export default function Footer() {
           divider={<Divider orientation="vertical" flexItem />}
           spacing={2}
         >
-          <Link href="https://github.com/Caffeine-Driven-Development-LLC">
+          <Link href="https://github.com/Caffeine-Driven-Development-LLC/AppTrack">
             Github
           </Link>
           <Link href="mailto:Support@getAppTrack.com">Contact us</Link>
