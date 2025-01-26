@@ -30,7 +30,7 @@ export default function Index() {
           />
         </video>
         <Typography>
-          App Track is A free, open-sourced, and private way to help you get and
+          App Track is a free, open-sourced, and private way to help you get and
           stay organized within your job search. We all know how frustrating it
           can be to view countless listings, not realize whether you&apos;ve
           already seen them, already applied, have already received a rejection,
