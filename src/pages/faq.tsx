@@ -12,56 +12,57 @@ export default function Faq() {
         <Typography variant="h2">Frequently Asked Questions</Typography>
         <FaqQuestionAndAnswer question="When will App Track be available for download?">
           <Typography>
-            Soon! There is a small list of items to do yet so the app can be
-            distributed, but work is progressing, and version 1 should be out
-            soon.
+            Soon! We are wrapping up some action items so that the app can be
+            distributed. Work is progressing, and Version 1.0 should be
+            available soon.
           </Typography>
         </FaqQuestionAndAnswer>
-        <FaqQuestionAndAnswer question="Wait, it's free? Whats the catch?">
+        <FaqQuestionAndAnswer question="It's free? What's the catch?">
           <Typography>
-            There is no catch. Your data is not shared with anyone, and there is
-            no charge for the application. This application was created as a
-            side project and I can&#39;t in good conscience ask for payment or
-            sell data from this app to try and make a profit.
+            Yes, it&#39;s free, and there is no catch! Your data is not shared
+            with anyone, and there is no charge for the application.
           </Typography>
           <Typography>
-            The code for this is open-sourced so anyone can verify the privacy
+            This whole endeavor began as a personal side project, so I can&#39;t
+            in good conscience ask for payment or sell data to try and monetize
+            it. The code is open-sourced so anyone can verify the privacy
             claims, or help contribute however they&#39;d like.
           </Typography>
         </FaqQuestionAndAnswer>
         <FaqQuestionAndAnswer question="Can the application flow be customized?">
           <Typography>
-            Yes! There is a system built so that you can track your application
-            process any way you&#39;d like. If you would like a slimmed down
-            process, you can remove any steps you feel are unnecessary. Or, go
-            ahead an add any steps you feel are missing.
+            Yes! The App is built so that you can track your application process
+            any way you&#39;d like.
+          </Typography>
+          <Typography>
+            If you would prefer a slimmed down process, you can remove any steps
+            you feel are unnecessary. Conversely, if you want more detail, you
+            can also add any steps you feel are missing.
           </Typography>
         </FaqQuestionAndAnswer>
         <FaqQuestionAndAnswer question="How can I contribute?">
           <Typography>
             The project is open-sourced on{' '}
             <Link href="https://github.com/Caffeine-Driven-Development-LLC/AppTrack">
-              github
+              Github
             </Link>
             . We would love for you to come help with either bug reports or new
-            features! Take a look at the <Link href="">Contributing</Link> page
-            to get started.{' '}
-            {
-              // TODO Update this one the github page is setup
-            }
+            features. Take a look at the{' '}
+            <Link href="https://github.com/Caffeine-Driven-Development-LLC/AppTrack/blob/main/CONTRIBUTING.md">
+              Contributing page
+            </Link>{' '}
+            to get started.
           </Typography>
         </FaqQuestionAndAnswer>
-        <FaqQuestionAndAnswer question="What data is collected about me when I use App Track">
-          <Typography>Nothing.</Typography>
+        <FaqQuestionAndAnswer question="What data is collected about me when I use App Track?">
+          <Typography>None.</Typography>
           <Typography>
-            Nothing about your usage is reported to anyone. We collect no data
-            from any action of the application. We have no insight into how you
-            use App Track. If you apply for a role, we wont know, if you delete
-            the app we have no way of finding out.
+            Nothing about your usage is reported to anyone, and we collect no
+            data from any action of the application.
           </Typography>
           <Typography>
-            Because of this, there is no way to identify what is working well,
-            or what needs improvement in the application. If you have any
+            As a result, there is no way for us to identify what is working
+            well, or what needs improvement in the application. If you have any
             feedback about the application, positive or negative, please let us
             know by emailing us at{' '}
             <Link href="mailto:Support@GetAppTrack.com">
