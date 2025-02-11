@@ -40,7 +40,7 @@ export default function Footer() {
           professionally and personally.
         </Typography>
         <Typography variant="body2" sx={{ textAlign: 'center' }}>
-          &copy; 2025 Caffeine Driven Development LLC.
+          &copy; 2025 <Link href="https://caffeine-driven-development.com/">Caffeine Driven Development LLC.</Link>
         </Typography>
       </Stack>
     </Box>
