@@ -20,12 +20,6 @@ export default function SettingsDocumentationPage() {
         </Typography>
         <Typography variant="h4">General</Typography>
         <Typography>
-          App Track has the ability to let you know if App updates are
-          available. To enable this, select the &#34;Automatically Check for
-          Updates&#34;. If this switch is not enabled, you also have the ability
-          to use the button to manually check for updates.
-        </Typography>
-        <Typography>
           Appearance allows you to change the theme of the app. Options
           available are the standard Light, Dark, or System Default modes.
         </Typography>
