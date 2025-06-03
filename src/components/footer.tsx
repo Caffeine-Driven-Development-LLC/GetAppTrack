@@ -27,20 +27,11 @@ export default function Footer() {
           </Link>
           <Link href="mailto:Support@getAppTrack.com">Contact us</Link>
         </Stack>
-        <Typography
-          variant="body2"
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            textAlign: 'center',
-          }}
-        >
-          App Track is the result of an exercise in self improvement, both
-          professionally and personally.
-        </Typography>
         <Typography variant="body2" sx={{ textAlign: 'center' }}>
-          &copy; 2025 <Link href="https://caffeine-driven-development.com/">Caffeine Driven Development LLC.</Link>
+          &copy; 2025{' '}
+          <Link href="https://caffeine-driven-development.com/">
+            Caffeine Driven Development LLC.
+          </Link>
         </Typography>
       </Stack>
     </Box>
