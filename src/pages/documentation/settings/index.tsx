@@ -20,6 +20,17 @@ export default function SettingsDocumentationPage() {
         </Typography>
         <Typography variant="h4">General</Typography>
         <Typography>
+          A toggle to let the app check for updates is available. If turned off
+          you are given the option to manually check for updates.
+        </Typography>
+        <Typography>
+          If an update is found, either automatically, or by manually checking,
+          it will be downloaded. Once downloaded, a Restart & Update button will
+          appear. Clicking this button will restart the app and update it to the
+          latest version.
+        </Typography>
+        <Typography variant="h4">Theme</Typography>
+        <Typography>
           Appearance allows you to change the theme of the app. Options
           available are the standard Light, Dark, or System Default modes.
         </Typography>
