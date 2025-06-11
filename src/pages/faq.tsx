@@ -10,11 +10,10 @@ export default function Faq() {
       </Head>
       <Stack spacing={2}>
         <Typography variant="h2">Frequently Asked Questions</Typography>
-        <FaqQuestionAndAnswer question="When will App Track be available for download?">
+        <FaqQuestionAndAnswer question="When will App Track be available for windows?">
           <Typography>
-            Soon! We are wrapping up some action items so that the app can be
-            distributed. Work is progressing, and Version 1.0 should be
-            available soon.
+            Hopefully soon! The app has been released on Mac and we are working
+            to obtain the certificates we need to release it on Windows.
           </Typography>
         </FaqQuestionAndAnswer>
         <FaqQuestionAndAnswer question="It's free? What's the catch?">
