@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 export default function Header() {
   const router = useRouter();
   const [downloadUrl, setDownloadUrl] = useState<string>('');
-  const [osType, setOsType] = useState<string>('Unknown OS');
 
   useEffect(() => {
     const getOS = () => {
@@ -17,48 +16,47 @@ export default function Header() {
       return 'Unknown OS';
     };
 
-    const fetchLatestDmgUrl = async () => {
+    const fetchLatestDmgUrl = async (osType: string) => {
       try {
         const response = await fetch(
           'https://api.github.com/repos/Caffeine-Driven-Development-LLC/AppTrack/releases/latest'
         );
         const data = await response.json();
-        const dmgAsset = data.assets.find((asset: { name: string }) =>
-          asset.name.endsWith('.dmg')
-        );
-        if (dmgAsset) {
-          setDownloadUrl(dmgAsset.browser_download_url);
+        if (osType === 'Mac') {
+          const dmgAsset = data.assets.find((asset: { name: string }) =>
+            asset.name.endsWith('.dmg')
+          );
+          if (dmgAsset) {
+            setDownloadUrl(dmgAsset.browser_download_url);
+          }
+        } else if (osType === 'Windows') {
+          const exeAsset = data.assets.find((asset: { name: string }) =>
+            asset.name.endsWith('.exe')
+          );
+          if (exeAsset) {
+            setDownloadUrl(exeAsset.browser_download_url);
+          }
         }
       } catch (error) {
         console.error('Error fetching release:', error);
       }
     };
 
-    setOsType(getOS());
-    if (getOS() === 'Mac') {
-      fetchLatestDmgUrl();
-    }
+    const user_operating_system = getOS();
+    fetchLatestDmgUrl(user_operating_system);
   }, []);
 
   const downloadButton = () => {
-    if (osType === 'Mac') {
-      return (
-        <Button
-          variant="contained"
-          color="success"
-          size="large"
-          href={downloadUrl}
-        >
-          Download
-        </Button>
-      );
-    } else {
-      return (
-        <Button variant="contained" color="success" size="large">
-          Coming soon for Windows
-        </Button>
-      );
-    }
+    return (
+      <Button
+        variant="contained"
+        color="success"
+        size="large"
+        href={downloadUrl}
+      >
+        Download
+      </Button>
+    );
   };
 
   return (

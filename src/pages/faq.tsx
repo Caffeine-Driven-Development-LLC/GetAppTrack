@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import { Link, Stack, Typography } from '@mui/material';
 import FaqQuestionAndAnswer from '@/components/faq_question_and_answer';
 
@@ -10,10 +11,21 @@ export default function Faq() {
       </Head>
       <Stack spacing={2}>
         <Typography variant="h2">Frequently Asked Questions</Typography>
-        <FaqQuestionAndAnswer question="When will App Track be available for windows?">
+        <FaqQuestionAndAnswer question="Windows gives me an warning when I try to insall the app. What do I do?">
           <Typography>
-            Hopefully soon! The app has been released on Mac and we are working
-            to obtain the certificates we need to release it on Windows.
+            This is a known issue Clicking &#34;More Info&#34; will give you the
+            option to Run anyway. and install the application.
+          </Typography>
+          <Image
+            alt="Windows install warning"
+            width={525}
+            height={492}
+            src="/appTrackScreenshots/windowsInstallWarning.png"
+          />
+          <Typography>
+            To remove this warning, Caffeine Driven Development would need to
+            commit to a finical obligation, we have made the choice to skip this
+            currently but will revisit this in the future.
           </Typography>
         </FaqQuestionAndAnswer>
         <FaqQuestionAndAnswer question="It's free? What's the catch?">
