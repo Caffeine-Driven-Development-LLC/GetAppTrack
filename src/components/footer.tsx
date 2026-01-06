@@ -28,7 +28,7 @@ export default function Footer() {
           <Link href="mailto:Support@getAppTrack.com">Contact us</Link>
         </Stack>
         <Typography variant="body2" sx={{ textAlign: 'center' }}>
-          &copy; 2025{' '}
+          &copy; 2026{' '}
           <Link href="https://caffeine-driven-development.com/">
             Caffeine Driven Development LLC.
           </Link>
